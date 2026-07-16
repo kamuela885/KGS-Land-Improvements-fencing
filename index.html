@@ -1,345 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>KGS Land Improvements & Fencing</title>
 
 <style>
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+body {
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f7f5ef;
+    color:#333;
 }
 
-body{
-background:#f5f5f5;
-color:#333;
+header {
+    background:#2f4f2f;
+    color:white;
+    text-align:center;
+    padding:25px;
 }
 
-header{
-background:#1b5e20;
-color:white;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
+header img {
+    width:180px;
+    max-width:80%;
 }
 
-header h1{
-font-size:32px;
+nav {
+    background:#4b3621;
+    padding:15px;
+    text-align:center;
 }
 
-nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-weight:bold;
+nav a {
+    color:white;
+    text-decoration:none;
+    margin:8px;
+    font-weight:bold;
 }
 
-.hero{
-height:85vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600");
-background-size:cover;
-background-position:center;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
-color:white;
-padding:20px;
+.hero {
+    text-align:center;
+    padding:50px 20px;
+    background:#e8e2d2;
 }
 
-.hero h2{
-font-size:56px;
-margin-bottom:20px;
+.hero h1 {
+    color:#2f4f2f;
+    font-size:38px;
 }
 
-.hero p{
-font-size:22px;
-margin-bottom:30px;
+.button {
+    display:inline-block;
+    padding:14px 25px;
+    margin:10px;
+    background:#2f4f2f;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
 }
 
-.button{
-background:#4CAF50;
-padding:15px 35px;
-color:white;
-text-decoration:none;
-font-size:20px;
+section {
+    max-width:1000px;
+    margin:auto;
+    padding:40px 20px;
+}
+
+h2 {
+    text-align:center;
+    color:#2f4f2f;
+}
+
+
+.services {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card {
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+
+.gallery {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.gallery img {
+    width:100%;
+    height:220px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+
+.review {
+    background:white;
+    padding:20px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 3px 10px rgba(0,0,0,.1);
+}
+
+
+form {
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.15);
+}
+
+
+input, textarea, select {
+
+width:100%;
+padding:12px;
+margin:8px 0;
 border-radius:6px;
+border:1px solid #ccc;
+
 }
 
-section{
-padding:70px 10%;
+
+button {
+
+background:#2f4f2f;
+color:white;
+padding:14px;
+border:none;
+border-radius:8px;
+width:100%;
+font-size:16px;
+font-weight:bold;
+
 }
 
-.services{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-}
 
-.card{
-background:white;
-padding:30px;
-border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,.15);
-}
+.contact {
 
-.card h3{
-margin-bottom:10px;
-color:#1b5e20;
-}
-
-footer{
-background:#1b5e20;
+background:#2f4f2f;
 color:white;
 text-align:center;
-padding:30px;
+padding:40px 20px;
+
 }
 
-.contact{
-background:#222;
+
+footer {
+
+background:#4b3621;
 color:white;
 text-align:center;
-}
+padding:15px;
 
-.phone{
-font-size:34px;
-margin:20px 0;
-}
-
-</style>
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KGS Land Improvements & Fencing</title>
-
-<style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-header {
-    background: #ffffff;
-    padding: 15px 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    margin-right: 20px;
-    color: #2f6b2f;
-    font-weight: bold;
-}
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: #2f6b2f;
-    color: white;
-}
-
-.hero h2 {
-    font-size: 38px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background: white;
-    color: #2f6b2f;
-    text-decoration: none;
-    border-radius: 8px;
-}
-
-</style>
-
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KGS Land Improvements & Fencing</title>
-
-<style>
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-}
-
-header {
-    background: #ffffff;
-    padding: 15px 25px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-}
-
-nav {
-    margin-top: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    margin-right: 20px;
-    color: #2f6b2f;
-    font-weight: bold;
-}
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: #2f6b2f;
-    color: white;
-}
-
-.hero h2 {
-    font-size: 38px;
-}
-
-.button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 15px 30px;
-    background: white;
-    color: #2f6b2f;
-    text-decoration: none;
-    border-radius: 8px;
 }
 
 </style>
 
 </head>
 
+
+
 <body>
+
 
 <header>
 
-<div style="display:flex;align-items:center;gap:15px;">
-    <img src="IMG_2518.jpeg" alt="KGS Land Improvements Logo"
-         style="height:70px;border-radius:8px;">
-    <h1>KGS Land Improvements & Fencing</h1>
-</div>
+<img src="IMG_2518.jpeg" alt="KGS Land Improvements Logo">
 
-<nav>
-<a href="#">Home</a>
-<a href="#services">Services</a>
-<a href="#contact">Contact</a>
-<a href="tel:8087652922">Call Us</a>
-</nav>
-    
-<section class="hero">
-    <h2>Professional Fencing & Land Improvements</h2>
-    
-    <p>
-        Quality fence installation, landscaping, and property improvement services
-        proudly serving the Big Island of Hawaii.
-    </p>
+<h1>KGS Land Improvements & Fencing</h1>
 
-    <a href="tel:8087652922" class="button">
-        Request a Free Estimate
-    </a>
-</section>
-    
+<p>Professional Outdoor Services Built With Pride</p>
+
 </header>
 
-<section class="hero">
 
-<div>
 
-<h2>Big Island's Trusted Fencing & Landscaping Experts</h2>
+<nav>
+
+<a href="#services">Services</a>
+<a href="#gallery">Gallery</a>
+<a href="#reviews">Reviews</a>
+<a href="#quote">Request Quote</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+
+
+<div class="hero">
+
+<h1>Your Property. Improved.</h1>
 
 <p>
-From fencing and land clearing to hedge trimming and irrigation,
-we bring quality workmanship to every project.
+Tree trimming, landscaping, fencing, cleanup, and property improvements.
 </p>
 
+
 <a class="button" href="tel:8087652922">
-Call For A Free Estimate
+Call (808) 765-2922
 </a>
+
 
 </div>
 
-</section>
+
+
+
 
 <section id="services">
 
-<h2 style="text-align:center;margin-bottom:40px;font-size:42px;">
-Our Services
-</h2>
+<h2>Our Services</h2>
+
 
 <div class="services">
 
-<div class="card">
-<h3>Hog Wire Fencing</h3>
-<p>Beautiful, durable fencing for residential and agricultural properties.</p>
-</div>
 
 <div class="card">
-<h3>Chain Link Fence</h3>
-<p>Affordable and secure fencing solutions.</p>
+<h3>🌳 Tree Trimming</h3>
+<p>Professional trimming and cleanup to keep your trees healthy and your property looking great.</p>
 </div>
 
-<div class="card">
-<h3>Wood Fence</h3>
-<p>Custom privacy and decorative wood fencing.</p>
-</div>
 
 <div class="card">
-<h3>Vinyl Fence</h3>
-<p>Maintenance-free fencing built to last.</p>
+<h3>🌿 Hedge Trimming</h3>
+<p>Clean shaping and maintenance for a finished landscape appearance.</p>
 </div>
 
-<div class="card">
-<h3>Land Clearing</h3>
-<p>Brush removal, cleanup, and property preparation.</p>
-</div>
 
 <div class="card">
-<h3>Hedge Trimming</h3>
-<p>Professional hedge trimming and complete yard maintenance.</p>
+<h3>🏡 Yard Maintenance & Cleanup</h3>
+<p>Property cleanup, green waste removal, and regular maintenance services.</p>
 </div>
+
+
+<div class="card">
+<h3>🚛 Trash Hauling</h3>
+<p>Reliable removal of unwanted debris, junk, and yard waste.</p>
+</div>
+
+
+<div class="card">
+<h3>🚧 Fencing</h3>
+<p>Hog wire, chain link, gates, repairs, and custom fence projects.</p>
+</div>
+
+
+<div class="card">
+<h3>💧 Simple Irrigation</h3>
+<p>Basic irrigation repairs and improvements to help maintain your landscape.</p>
+</div>
+
 
 </div>
 
 </section>
+
+
+
+
+
+
+<section id="gallery">
+
+<h2>Project Gallery</h2>
+
+<p style="text-align:center;">
+Upload your project photos and replace these images with your own.
+</p>
+
+
+<div class="gallery">
+
+<img src="fence1.jpg" alt="Fence Project">
+
+<img src="yard1.jpg" alt="Yard Cleanup">
+
+<img src="tree1.jpg" alt="Tree Trimming">
+
+<img src="project1.jpg" alt="KGS Project">
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+
+<section id="reviews">
+
+<h2>Customer Reviews</h2>
+
+
+<div class="review">
+
+<h3>Customer Name</h3>
+
+<p>
+"Add your customer review here."
+</p>
+
+</div>
+
+
+
+<div class="review">
+
+<h3>Customer Name</h3>
+
+<p>
+"Add your customer review here."
+</p>
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="quote">
+
+<h2>Request A Quote</h2>
+
+
+<form action="https://formsubmit.co/kamuelagaughen2@gmail.com" method="POST">
+
+
+<input type="text" name="name" placeholder="Your Name" required>
+
+
+<input type="tel" name="phone" placeholder="Phone Number" required>
+
+
+<input type="email" name="email" placeholder="Email Address" required>
+
+
+<select name="service">
+
+<option>Select Service</option>
+
+<option>Tree Trimming</option>
+
+<option>Hedge Trimming</option>
+
+<option>Yard Maintenance</option>
+
+<option>Trash Hauling</option>
+
+<option>Fencing</option>
+
+<option>Irrigation</option>
+
+</select>
+
+
+<textarea name="details" rows="5" placeholder="Tell us about your project"></textarea>
+
+
+<button type="submit">
+Send Quote Request
+</button>
+
+
+</form>
+
+</section>
+
+
+
+
+
 
 <section id="contact" class="contact">
 
-<h2 style="font-size:42px;">
-Contact Us
-</h2>
+<h2>Contact KGS Land Improvements</h2>
 
-<div class="phone">
-📞 808-765-2922
-</div>
 
 <p>
-Serving the Big Island of Hawaii
+📞 (808) 765-2922
 </p>
 
-<br>
 
-<a class="button" href="tel:8087652922">
-Call Now
+<p>
+📧 kamuelagaughen2@gmail.com
+</p>
+
+
+<a class="button" href="mailto:kamuelagaughen2@gmail.com">
+Email Us
 </a>
+
 
 </section>
 
+
+
+
+
 <footer>
 
+<p>
 © 2026 KGS Land Improvements & Fencing
+</p>
 
 </footer>
 
+
+
 </body>
+
 </html>
