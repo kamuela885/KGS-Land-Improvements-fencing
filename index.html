@@ -1,31 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KGS Land Improvements & Fencing</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KGS Land Improvements & Fencing</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+background:#f5f5f5;
+color:#333;
+}
+
+header{
+background:#1b5e20;
+color:white;
+padding:20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+font-size:32px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin-left:20px;
+font-weight:bold;
+}
+
+.hero{
+height:85vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h2{
+font-size:56px;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:30px;
+}
+
+.button{
+background:#4CAF50;
+padding:15px 35px;
+color:white;
+text-decoration:none;
+font-size:20px;
+border-radius:6px;
+}
+
+section{
+padding:70px 10%;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 15px rgba(0,0,0,.15);
+}
+
+.card h3{
+margin-bottom:10px;
+color:#1b5e20;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+.contact{
+background:#222;
+color:white;
+text-align:center;
+}
+
+.phone{
+font-size:34px;
+margin:20px 0;
+}
+
+</style>
 </head>
+
 <body>
+
+<header>
 
 <h1>KGS Land Improvements & Fencing</h1>
 
-<h2>Serving the Big Island of Hawaii</h2>
+<nav>
 
-<p>Professional fencing, landscaping, hedge trimming, and land improvement services.</p>
+<a href="#">Home</a>
+<a href="#services">Services</a>
+<a href="#contact">Contact</a>
 
-<h3>Our Services</h3>
-<ul>
-    <li>Hog Wire Fencing</li>
-    <li>Chain Link Fencing</li>
-    <li>Vinyl Fencing</li>
-    <li>Wood Fencing</li>
-    <li>Gate Installation</li>
-    <li>Land Clearing</li>
-    <li>Hedge Trimming</li>
-    <li>Yard Maintenance</li>
-</ul>
+</nav>
 
-<p>Call us today for a free estimate!</p>
+</header>
+
+<section class="hero">
+
+<div>
+
+<h2>Big Island's Trusted Fencing & Landscaping Experts</h2>
+
+<p>
+From fencing and land clearing to hedge trimming and irrigation,
+we bring quality workmanship to every project.
+</p>
+
+<a class="button" href="tel:8087652922">
+Call For A Free Estimate
+</a>
+
+</div>
+
+</section>
+
+<section id="services">
+
+<h2 style="text-align:center;margin-bottom:40px;font-size:42px;">
+Our Services
+</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Hog Wire Fencing</h3>
+<p>Beautiful, durable fencing for residential and agricultural properties.</p>
+</div>
+
+<div class="card">
+<h3>Chain Link Fence</h3>
+<p>Affordable and secure fencing solutions.</p>
+</div>
+
+<div class="card">
+<h3>Wood Fence</h3>
+<p>Custom privacy and decorative wood fencing.</p>
+</div>
+
+<div class="card">
+<h3>Vinyl Fence</h3>
+<p>Maintenance-free fencing built to last.</p>
+</div>
+
+<div class="card">
+<h3>Land Clearing</h3>
+<p>Brush removal, cleanup, and property preparation.</p>
+</div>
+
+<div class="card">
+<h3>Hedge Trimming</h3>
+<p>Professional hedge trimming and complete yard maintenance.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="contact" class="contact">
+
+<h2 style="font-size:42px;">
+Contact Us
+</h2>
+
+<div class="phone">
+📞 808-765-2922
+</div>
+
+<p>
+Serving the Big Island of Hawaii
+</p>
+
+<br>
+
+<a class="button" href="tel:8087652922">
+Call Now
+</a>
+
+</section>
+
+<footer>
+
+© 2026 KGS Land Improvements & Fencing
+
+</footer>
 
 </body>
 </html>
