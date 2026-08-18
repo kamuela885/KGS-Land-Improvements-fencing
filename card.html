@@ -8,75 +8,92 @@
 <title>KGS Land Improvements | Digital Business Card</title>
 
 <style>
+* {
+  box-sizing: border-box;
+}
 
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: white;
-    text-align: center;
+  margin: 0;
+  background: #111;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
 }
 
 .container {
-    max-width: 650px;
-    margin: auto;
-    padding: 25px;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
 .card-image {
-    width: 100%;
-    border-radius: 12px;
-    margin-bottom: 25px;
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 24px;
 }
 
 h1 {
-    color: #7da34a;
+  color: #7da34a;
+  margin-bottom: 8px;
+}
+
+.subtitle {
+  color: #ddd;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .button {
-    display: block;
-    background: #6f9441;
-    color: white;
-    text-decoration: none;
-    padding: 16px;
-    margin: 12px 0;
-    border-radius: 8px;
-    font-size: 18px;
-    font-weight: bold;
+  display: block;
+  width: 100%;
+  background: #6f9441;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .button:hover {
-    background: #85ad50;
+  background: #86ad50;
 }
 
-.contact {
-    margin-top: 25px;
-    color: #ccc;
+.tagline {
+  margin-top: 25px;
+  font-weight: bold;
+  color: #9dc261;
 }
-
 </style>
+
 </head>
 
 <body>
 
 <div class="container">
 
-<img src="business-card.jpeg"
-     alt="KGS Land Improvements Business Card"
-     class="card-image">
+<img
+  src="./business-card.jpeg"
+  alt="KGS Land Improvements Business Card"
+  class="card-image"
+>
 
 <h1>KGS Land Improvements</h1>
 
-<p>
+<p class="subtitle">
 Professional. Reliable. Local.<br>
 Big Island, Hawaii
 </p>
 
-<a class="button" href="tel:8087652922">
+<a class="button" href="tel:+18087652922">
 📞 Call KGS
 </a>
 
-<a class="button" href="sms:8087652922">
+<a class="button" href="sms:+18087652922">
 💬 Text KGS
 </a>
 
@@ -84,22 +101,13 @@ Big Island, Hawaii
 ✉️ Email KGS
 </a>
 
-<a class="button" href="index.html#quote">
+<a class="button" href="./index.html#quote">
 📝 Request A Quote
 </a>
 
-<a class="button"
-href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:3.0%0AFN:KGS%20Land%20Improvements%0AORG:KGS%20Land%20Improvements%0ATEL:8087652922%0AEMAIL:kamuelagaughen2@gmail.com%0AEND:VCARD">
-👤 Save To Contacts
-</a>
-
-<div class="contact">
-
-<p>
+<p class="tagline">
 Better Service For An Even Better Price
 </p>
-
-</div>
 
 </div>
 
